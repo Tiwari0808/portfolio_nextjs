@@ -16,6 +16,8 @@ import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import profile_img from './profile-img.png';
+import profile_pic from './portfolio_pic.jpg';
+import profile_circle from './portfolio-circle.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
@@ -38,6 +40,8 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 
 export const assets = {
     user_image,
+    profile_circle,
+    profile_pic,
     code_icon,
     code_icon_dark,
     edu_icon,
