@@ -8,7 +8,7 @@ import { FaDownload } from "react-icons/fa6";
 
 const Header = () => {
   return (
-    <div className='mt-[11%] flex flex-col justify-center items-center'>
+    <div id='Home' className='flex flex-col justify-center items-center h-screen scroll-mt-24'>
       <div className='flex flex-col items-center justify-center gap-2'>
         <Image src={assets.profile_circle} priority width={168} height={168} alt='profile-picture rounded-full' />
         <p className='text-[#242424] text-[28px] leading-[40px] font-normal'>Hi! I’m Divyanshu Tiwari <span>👋🏻</span></p>
