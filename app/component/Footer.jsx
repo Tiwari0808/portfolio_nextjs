@@ -5,7 +5,7 @@ import { IoMail } from "react-icons/io5";
 
 const Footer = () => {
     return (
-        <div className='flex items-center justify-center flex-col my-15'>
+        <div className='flex items-center justify-center flex-col mt-20'>
             <Image src={assets.logo3} width={171} height={57} alt='logo' />
             <div className='flex items-center justify-center gap-1 text-[#797979]'>
                 <IoMail />

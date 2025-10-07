@@ -8,16 +8,17 @@ import Connect from './component/Connect'
 import Footer from './component/Footer'
 
 const page = () => {
+
   return (
-    <>
+    <div className=''>
     <Navbar/>
     <Header/>
-    <About/>
+    {/* <About/>
     <Services/>
     <Project/>
-    <Connect/>
+    <Connect/> */}
     <Footer/>
-    </>
+    </div>
   )
 }
 

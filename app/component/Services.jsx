@@ -5,7 +5,7 @@ import { FaLaptopCode, FaPalette, FaRocket } from "react-icons/fa6";
 
 const Services = () => {
     return (
-        <div>
+        <div className="scroll-mt-24" id="Services">
             <div className="flex items-center justify-center flex-col">
                 <p className="text-[24px] text-[#242424] font-normal">what i offers</p>
                 <p className="text-[60px] text-[#242424] font-normal">My services</p>
@@ -14,18 +14,18 @@ const Services = () => {
                     I build fast, responsive, and interactive web apps with clean, user-friendly designs.
                 </p>
             </div>
-            <div className="flex justify-evenly mt-[8vh]">
-                <div className='w-[235px] h-[235px] border-[2px] border-[#EFEFEF] p-5 flex flex-col justify-evenly rounded-[8px] shadow '>
+            <div className="flex justify-evenly mt-10">
+                <div className='w-[235px] h-[235px] border-[2px] border-[#EFEFEF] p-5 flex flex-col justify-evenly rounded-[8px] shadow hover:bg-rose-100 hover:-translate-y-1 duration-500'>
                     <FaLaptopCode className="w-[40px] h-[40px] bg-red-600 p-1.5 text-white rounded-[10px]" />
                     <p className="text-[26px] text-[#282828] font-medium">Web Development</p>
                     <p className="text-[#797979] leading-[26px] text-[16px]">Responsive, high-performance websites.</p>
                 </div>
-                <div className='w-[235px] h-[235px] border-[2px] border-[#EFEFEF] p-5 flex flex-col justify-evenly rounded-[8px]'>
+                <div className='w-[235px] h-[235px] border-[2px] border-[#EFEFEF] p-5 flex flex-col justify-evenly rounded-[8px] hover:bg-rose-100 hover:-translate-y-1 duration-500'>
                     <FaPalette className="w-[40px] h-[40px] bg-red-600 p-1.5 text-white rounded-[10px]" />
                     <p className="text-[26px] text-[#282828] font-medium">UI / UX Design</p>
                     <p className="text-[#797979] leading-[26px] text-[16px]">Modern, user-focused designs.</p>
                 </div>
-                <div className='w-[235px] h-[235px] border-[2px] border-[#EFEFEF] p-5 flex flex-col justify-evenly rounded-[8px] '>
+                <div className='w-[235px] h-[235px] border-[2px] border-[#EFEFEF] p-5 flex flex-col justify-evenly rounded-[8px] hover:bg-rose-100 hover:-translate-y-1 duration-500'>
                     <FaRocket className="w-[40px] h-[40px] bg-red-600 p-1.5 text-white rounded-[10px]" />
                     <p className="text-[26px] text-[#282828] font-medium">Deployment & Optimization</p>
                     <p className="text-[#797979] leading-[26px] text-[16px]">Live hosting, SEO-friendly, and optimized apps.</p>

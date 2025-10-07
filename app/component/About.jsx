@@ -10,7 +10,7 @@ import { FaFigma, FaGraduationCap, FaNpm, FaReact } from "react-icons/fa6";
 
 const About = () => {
   return (
-    <div className="p-[150px] scroll-mt-24" id="About">
+    <div className="p-[150px] mt-[-2rem] " id="About">
       <div className="text-center">
         <p className="text-[24px] text-[#242424] ">Introduction</p>
         <p className="text-[60px] font-normal text-[#242424]">About me</p>
@@ -32,21 +32,21 @@ const About = () => {
             performance and a polished user experience.
           </p>
           <div className="flex justify-between">
-            <div className="border-[1px] border-[#D8D8D8] w-[199px] h-[195px] px-5 py-0 rounded-[15px] flex flex-col justify-evenly">
+            <div className="border-[1px] border-[#D8D8D8] w-[199px] h-[195px] px-5 py-0 rounded-[15px] flex flex-col justify-evenly hover:bg-rose-100 hover:-translate-y-1 duration-500">
               <FaCode className="text-[#49516B] w-[22px] h-[22px]" />
               <p className="text-[#494949] text[20px] font-medium">Languages</p>
               <p className="text-[#797979] leading-5 text-[15px]">
                 HTML, CSS, JavaScript , React Js, Next Js
               </p>
             </div>
-            <div className="border-[1px] border-[#D8D8D8] w-[199px] h-[195px] px-5 py-0 rounded-[15px] flex flex-col justify-evenly">
+            <div className="border-[1px] border-[#D8D8D8] w-[199px] h-[195px] px-5 py-0 rounded-[15px] flex flex-col justify-evenly hover:bg-rose-100 hover:-translate-y-1 duration-500">
               <FaGraduationCap className="text-[#49516B] w-[22px] h-[22px]" />
               <p className="text-[#494949] text[20px] font-medium">Education</p>
               <p className="text-[#797979] leading-5 text-[15px]">
                 BE in Electronics and Telecommunication
               </p>
             </div>
-            <div className="border-[1px] border-[#D8D8D8] w-[199px] h-[195px] px-5 rounded-[15px] flex flex-col justify-evenly">
+            <div className="border-[1px] border-[#D8D8D8] w-[199px] h-[195px] px-5 rounded-[15px] flex flex-col justify-evenly hover:bg-rose-100 hover:-translate-y-1 duration-500">
               <FaTools className="text-[#49516B] w-[22px] h-[22px]" />
               <p className="text-[#494949] text[20px] font-medium">
                 Frameworks & Libraries
@@ -59,25 +59,25 @@ const About = () => {
           <div className="flex flex-col gap-2">
             <p className="text-[#868686] text-[20px]">Tools i use</p>
             <div className="flex justify-evenly">
-              <div className="border w-[75] h-[75] rounded-[15px] p-2">
+              <div className="border w-[75] h-[75] rounded-[15px] p-2 hover:-translate-y-1 duration-500">
                 <VscVscode className="text-[#007ACC] w-[33px] h-[33px]" />
               </div>
-              <div className="border w-[75] h-[75] rounded-[15px] p-2">
+              <div className="border w-[75] h-[75] rounded-[15px] p-2 hover:-translate-y-1 duration-500">
                 <FaGitAlt className="text-[#F05033] w-[33px] h-[33px]" />
               </div>
-              <div className="border w-[75] h-[75] rounded-[15px] p-2">
+              <div className="border w-[75] h-[75] rounded-[15px] p-2 hover:-translate-y-1 duration-500">
                 <SiFirebase className="text-[#FFCA28] w-[33px] h-[33px]" />
               </div>
-              <div className="border w-[75] h-[75] rounded-[15px] p-2">
+              <div className="border w-[75] h-[75] rounded-[15px] p-2 hover:-translate-y-1 duration-500">
                 <IoLogoVercel className="text-[#000000] w-[33px] h-[33px]" />
               </div>
-              <div className="border w-[75] h-[75] rounded-[15px] p-2">
+              <div className="border w-[75] h-[75] rounded-[15px] p-2 hover:-translate-y-1 duration-500">
                 <FaFigma className="text-[] w-[33px] h-[33px]" />
               </div>
-              <div className="border w-[75] h-[75] rounded-[15px] p-2">
+              <div className="border w-[75] h-[75] rounded-[15px] p-2 hover:-translate-y-1 duration-500">
                 <FaNpm className="text-[#CB3837] w-[33px] h-[33px]" />
               </div>
-              <div className="border w-[75] h-[75] rounded-[15px] p-2">
+              <div className="border w-[75] h-[75] rounded-[15px] p-2 hover:-translate-y-1 duration-500">
                 <SiPostman className="text-[#FF6C37] w-[33px] h-[33px]" />
               </div>
             </div>
