@@ -5,7 +5,7 @@ import { FaLongArrowAltRight, FaSpinner } from "react-icons/fa";
 
 const Connect = () => {
     const [result, setResult] = useState("");
-    const[isSending,setIsSending] = useState(false);
+    const [isSending, setIsSending] = useState(false);
 
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -46,12 +46,9 @@ const Connect = () => {
                     <input type="text" required name='email' placeholder='Enter your email' className='border-[1px] max-w-[348px] outline-0 max-h-[68px] border-[#A4A4A4] bg-[#FFFFFF] p-1 text-center rounded-[4px]' />
                 </div>
                 <textarea name="message" id="" required placeholder='Enter your message' rows='6' className='outline-0 p-4  rounded-[6px] flex items-center justify-center border-[#A4A4A4] mt-10 mx-auto w-[727px] max-h-[215px] border-[1px]'></textarea>
-                <button type='submit' disabled={isSending} className='border-[1px] border-[#A4A4A4] px-3 py-2 flex items-center justify-center  cursor-pointer mx-auto mt-10 rounded-full bg-[#202020] text-[#FFFFFF]'>{isSending?<FaSpinner/>:'Submit now' }<span className={!isSending?`text-center ml-2`:`hidden`}><FaLongArrowAltRight /></span></button>
+                <button type='submit' disabled={isSending} className='border-[1px] border-[#A4A4A4] px-3 py-2 flex items-center justify-center  cursor-pointer mx-auto mt-10 rounded-full bg-[#202020] text-[#FFFFFF]'>{isSending ? <FaSpinner /> : 'Submit now'}<span className={!isSending ? `text-center ml-2` : `hidden`}><FaLongArrowAltRight /></span></button>
             </form>
             <p className='mt-10 text-center underline text-red-500'>{result}</p>
-            {/* <div className=''>
-                <hr className='w-[80%] flex items-center justify-center' />
-            </div> */}
 
         </div>
     )

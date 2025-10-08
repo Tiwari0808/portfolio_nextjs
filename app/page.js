@@ -13,11 +13,11 @@ const page = () => {
     <div className=''>
     <Navbar/>
     <Header/>
-    {/* <About/>
+    <About/>
     <Services/>
-    <Project/>
-    <Connect/> */}
-    <Footer/>
+    {/* <Project/>
+    <Connect/>
+    <Footer/> */}
     </div>
   )
 }

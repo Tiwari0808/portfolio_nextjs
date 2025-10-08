@@ -10,12 +10,12 @@ import { FaFigma, FaGraduationCap, FaNpm, FaReact } from "react-icons/fa6";
 
 const About = () => {
   return (
-    <div className="p-[150px] mt-[-2rem] " id="About">
+    <div className="px-5 lg:py-12 md:p-[150px] md:mt-[-2rem] " id="About">
       <div className="text-center">
-        <p className="text-[24px] text-[#242424] ">Introduction</p>
-        <p className="text-[60px] font-normal text-[#242424]">About me</p>
+        <p className="text-[20px] sm:text-[22px] md:text-[24px] text-[#242424]">Introduction</p>
+        <p className="text-[36px] sm:text-[48px] md:text-[60px] font-normal text-[#242424]">About me</p>
       </div>
-      <div className="flex  mt-10">
+      <div className="flex flex-col md:flex-row  mt-10">
         <Image
           alt="profile-image"
           height={538}
@@ -23,15 +23,15 @@ const About = () => {
           src={assets.profile2}
           className="rounded-[15px]"
         />
-        <div className="ml-10 flex flex-col justify-between gap-5">
-          <p className="w-[600px] text-[20px] leading-[30px] text-[#565656]">
+        <div className="md:ml-10 flex flex-col justify-between gap-5">
+          <p className="md:w-[600px] mt-3 md:mt-0 md:text-[20px] text-[14px] md:leading-[30px] text-center md:text-left text-[#565656]">
             As a frontend developer from India, I specialize in building clean,
             responsive, and engaging user interfaces using React, Next.js, and
             modern UI frameworks. I have hands-on experience creating real-world
             projects and collaborating on applications that deliver seamless
             performance and a polished user experience.
           </p>
-          <div className="flex justify-between">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-5">
             <div className="border-[1px] border-[#D8D8D8] w-[199px] h-[195px] px-5 py-0 rounded-[15px] flex flex-col justify-evenly hover:bg-rose-100 hover:-translate-y-1 duration-500">
               <FaCode className="text-[#49516B] w-[22px] h-[22px]" />
               <p className="text-[#494949] text[20px] font-medium">Languages</p>
@@ -56,9 +56,9 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-2">
-            <p className="text-[#868686] text-[20px]">Tools i use</p>
-            <div className="flex justify-evenly">
+          <div className=" md:flex flex-col gap-2">
+            <p className="text-[#565656] mb-5 md:mb-0 text-[20px]">Tools i use</p>
+            <div className=" grid grid-cols-4 gap-2 md:flex justify-evenly">
               <div className="border w-[75] h-[75] rounded-[15px] p-2 hover:-translate-y-1 duration-500">
                 <VscVscode className="text-[#007ACC] w-[33px] h-[33px]" />
               </div>

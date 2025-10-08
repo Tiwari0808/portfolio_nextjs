@@ -7,14 +7,14 @@ const Services = () => {
     return (
         <div className="scroll-mt-24" id="Services">
             <div className="flex items-center justify-center flex-col">
-                <p className="text-[24px] text-[#242424] font-normal">what i offers</p>
-                <p className="text-[60px] text-[#242424] font-normal">My services</p>
-                <p className="text-[#565656] text-[17px] leading-[40px] w-[760px] text-center font-normal">
+                <p className="md:text-[24px] text-[20px] text-[#242424] font-normal">what i offers</p>
+                <p className="md:text-[60px] text-[36px]  text-[#242424] font-normal">My services</p>
+                <p className="text-[#565656] text-[14px] lg:text-[17px] md:leading-[40px] px-4 lg:w-[760px] text-center font-normal">
                     I’m a Frontend Developer specializing in React, Next.js, and modern web technologies.
                     I build fast, responsive, and interactive web apps with clean, user-friendly designs.
                 </p>
             </div>
-            <div className="flex justify-evenly mt-10">
+            <div className="flex flex-col lg:flex-row gap-4 lg:gap-0 items-center justify-evenly mt-10">
                 <div className='w-[235px] h-[235px] border-[2px] border-[#EFEFEF] p-5 flex flex-col justify-evenly rounded-[8px] shadow hover:bg-rose-100 hover:-translate-y-1 duration-500'>
                     <FaLaptopCode className="w-[40px] h-[40px] bg-red-600 p-1.5 text-white rounded-[10px]" />
                     <p className="text-[26px] text-[#282828] font-medium">Web Development</p>

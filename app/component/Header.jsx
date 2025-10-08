@@ -14,8 +14,8 @@ const Header = () => {
         <p className='text-[#242424] text-center text-[18px]  md:text-[28px] leading-[40px] font-normal'>Hi! I’m Divyanshu Tiwari <span>👋🏻</span></p>
       </div>
       <p className='md:mt-3 text-center text-[#242424] text-[33px]  md:text-[65px] font-normal  md:px-0 md:leading-[85px] md:w-[847px] md:h-[170px]'>frontend web developer <br /> <span>based in pune.</span></p>
-      <div className='mt-5 gap-5 md:gap-0 flex flex-col md:flex-row justify-evenly'>
-        <a href="#Connect" className='bg-[#202020] cursor-pointer mr-8 w-[180px] md:w-[226px] md:h-[64px] h-[45px] rounded-full gap-1 flex items-center justify-center text-[#FFFFFF]'>
+      <div className='mt-5 gap-5 md:gap-0 flex flex-col md:flex-row justify-evenly items-center'>
+        <a href="#Connect" className='bg-[#202020] cursor-pointer lg:mr-8 w-[180px] md:w-[226px] md:h-[64px] h-[45px] rounded-full gap-1 flex items-center justify-center text-[#FFFFFF]'>
           <button className='text-center cursor-pointer'>connect with me</button>
           <IoArrowForward />
         </a>
