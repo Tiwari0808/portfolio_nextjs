@@ -8,8 +8,8 @@ import Connect from "./component/Connect";
 import Footer from "./component/Footer";
 import { useEffect, useState } from "react";
 
-const page = () => {
- const[isDark,setIsDark] = useState(true);
+const Page = () => {
+ const[isDark,setIsDark] = useState(false);
  useEffect(()=>{
    if (isDark) {
     localStorage.theme = 'dark'
@@ -18,13 +18,13 @@ const page = () => {
    }
  },[isDark]);
 
-//  useEffect(()=>{
-//   if (localStorage.theme === 'dark') {
-//     setIsDark(true)
-//   } else {
-//     setIsDark(false)
-//   }
-//  },[]);
+ useEffect(()=>{
+  if (localStorage.theme === 'dark') {
+    setIsDark(true)
+  } else {
+    setIsDark(false)
+  }
+ },[]);
 
 
   return (
@@ -40,4 +40,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

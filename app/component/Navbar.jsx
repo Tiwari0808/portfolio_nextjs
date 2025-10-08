@@ -52,7 +52,7 @@ const Navbar = ({ isDark,setIsDark }) => {
           <Image
             alt="logo"
             priority
-            src={assets.logo3}
+            src={isDark?assets.logo:assets.logo3}
             className="w-[130px] h-[42px] md:w-[170px] mt-auto bg-cover bg-center"
           />
         </a>
@@ -87,6 +87,7 @@ const Navbar = ({ isDark,setIsDark }) => {
           <button className="md:hidden cursor-pointer" onClick={openMenu}>
             <HiOutlineBars3 className="h-[28px] w-[28px]" />
           </button>
+           
         </div>
 
         {/* Mobile Menu */}
@@ -97,6 +98,7 @@ const Navbar = ({ isDark,setIsDark }) => {
           <div onClick={closeMenu}>
             <RxCross2 className="w-7 h-7 top-5 cursor-pointer absolute right-7" />
           </div>
+         
           {menuItems.map((item) => (
             <li key={item}>
               <a
