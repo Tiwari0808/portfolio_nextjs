@@ -16,7 +16,7 @@ const Project = () => {
                 <p className='lg:text-[20px] text-[16px] text-[#565656] text-center px-5 lg:w-[750px]'>Welcome to my web development portfolio! Explore a collection of projects showcasing
                     my expertise in front-end development.</p>
             </div>
-            <div className='flex flex-col items-center md:flex-row justify-between gap-15'>
+            <div className='flex flex-col md:flex-row items-center  justify-between gap-15'>
                 <div className="group w-[235px] h-[325px] relative overflow-hidden rounded-[10px]">
                     <Image
                         alt="project"

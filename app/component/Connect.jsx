@@ -34,10 +34,10 @@ const Connect = () => {
     };
     return (
         <div className='mt-20 scroll-mt-24' id='Connect'>
-            <div className='flex flex-col items-center justify-center gap-[1rem]'>
+            <div className='flex flex-col items-center justify-center lg:gap-[1rem]'>
                 <p className='w-[181px] h-[27px] text-[#242424] text-[20px] lg:text-[24px] text-center'>Connect with me</p>
                 <h2 className='w-[327px] h-[68px] text-[#242424] text-[36px] lg:text-[60px] text-center'>Get in touch</h2>
-                <p className='max-w-[577px] max-h-[80px] text-[#565656] text-[16px] px-5 lg:text-[20px] text-center'>I'd love to hear from you! If you have any questions, comments or
+                <p className='max-w-[577px] max-h-[80px] text-[#565656] mt-[-17px] text-[16px] px-5 lg:text-[20px] text-center'>I'd love to hear from you! If you have any questions, comments or
                     feedback, please use the form below.</p>
             </div>
             <form className='flex flex-col' onSubmit={onSubmit} >
