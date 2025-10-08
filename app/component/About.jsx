@@ -5,12 +5,12 @@ import { FaCode, FaTools } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
 import { FaGitAlt } from "react-icons/fa";
 import { SiFirebase, SiPostman } from "react-icons/si";
-import { IoBag, IoLogoVercel } from "react-icons/io5";
+import { IoLogoVercel } from "react-icons/io5";
 import { FaFigma, FaGraduationCap, FaNpm, FaReact } from "react-icons/fa6";
 
 const About = () => {
   return (
-    <div className="px-5 lg:py-12 md:p-[150px] md:mt-[-2rem] " id="About">
+    <div className="px-5 mt-[-1rem] mb-[4rem] lg:py-12 md:p-[150px] md:mt-[-2rem] " id="About">
       <div className="text-center">
         <p className="text-[20px] sm:text-[22px] md:text-[24px] text-[#242424]">Introduction</p>
         <p className="text-[36px] sm:text-[48px] md:text-[60px] font-normal text-[#242424]">About me</p>
