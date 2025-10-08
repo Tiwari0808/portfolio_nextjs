@@ -59,25 +59,25 @@ const About = () => {
           <div className=" md:flex flex-col gap-2">
             <p className="text-[#565656] mb-5 md:mb-0 text-[20px]">Tools i use</p>
             <div className=" grid grid-cols-4 gap-2 md:flex justify-evenly">
-              <div className="border w-[75] h-[75] rounded-[15px] p-2 hover:-translate-y-1 duration-500">
+              <div className="border w-[75] h-[75] rounded-[15px] flex items-center justify-center p-2 hover:-translate-y-1 duration-500">
                 <VscVscode className="text-[#007ACC] w-[33px] h-[33px]" />
               </div>
-              <div className="border w-[75] h-[75] rounded-[15px] p-2 hover:-translate-y-1 duration-500">
+              <div className="border w-[75] h-[75] rounded-[15px] p-2 flex items-center justify-center hover:-translate-y-1 duration-500">
                 <FaGitAlt className="text-[#F05033] w-[33px] h-[33px]" />
               </div>
-              <div className="border w-[75] h-[75] rounded-[15px] p-2 hover:-translate-y-1 duration-500">
+              <div className="border w-[75] h-[75] rounded-[15px] p-2 flex items-center justify-center hover:-translate-y-1 duration-500">
                 <SiFirebase className="text-[#FFCA28] w-[33px] h-[33px]" />
               </div>
-              <div className="border w-[75] h-[75] rounded-[15px] p-2 hover:-translate-y-1 duration-500">
+              <div className="border w-[75] h-[75] rounded-[15px] p-2 flex items-center justify-center hover:-translate-y-1 duration-500">
                 <IoLogoVercel className="text-[#000000] w-[33px] h-[33px]" />
               </div>
-              <div className="border w-[75] h-[75] rounded-[15px] p-2 hover:-translate-y-1 duration-500">
+              <div className="border w-[75] h-[75] rounded-[15px] p-2 flex items-center justify-center hover:-translate-y-1 duration-500">
                 <FaFigma className="text-[] w-[33px] h-[33px]" />
               </div>
-              <div className="border w-[75] h-[75] rounded-[15px] p-2 hover:-translate-y-1 duration-500">
+              <div className="border w-[75] h-[75] rounded-[15px] p-2 flex items-center justify-center hover:-translate-y-1 duration-500">
                 <FaNpm className="text-[#CB3837] w-[33px] h-[33px]" />
               </div>
-              <div className="border w-[75] h-[75] rounded-[15px] p-2 hover:-translate-y-1 duration-500">
+              <div className="border w-[75] h-[75] rounded-[15px] p-2 flex items-center justify-center hover:-translate-y-1 duration-500">
                 <SiPostman className="text-[#FF6C37] w-[33px] h-[33px]" />
               </div>
             </div>
