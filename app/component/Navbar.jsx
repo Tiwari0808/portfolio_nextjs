@@ -7,10 +7,15 @@ import { PiMoonThin } from "react-icons/pi";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
 import { MdArrowOutward } from "react-icons/md";
+import { CiSun } from "react-icons/ci";
 
-const Navbar = () => {
+const Navbar = ({ isDark,setIsDark }) => {
   const [active, setActive] = useState("Home");
   const sideMenuRef = useRef();
+ 
+  const toggleBtn = ()=>{
+    setIsDark(!isDark)
+  }
 
   const openMenu = () => {
     sideMenuRef.current.style.transform = "translateX(-13rem)";
@@ -59,11 +64,10 @@ const Navbar = () => {
               <a
                 href={`#${item}`}
                 onClick={() => setActive(item)}
-                className={`${
-                  active === item
+                className={`${active === item
                     ? "text-red-600 font-semibold"
                     : "text-[#2F2F2F]"
-                }`}
+                  }`}
               >
                 {item === "About" ? "About me" : item === "Work" ? "My Work" : item}
               </a>
@@ -73,8 +77,8 @@ const Navbar = () => {
 
         {/* Right buttons */}
         <div className="flex gap-4">
-          <button>
-            <PiMoonThin className="w-[28px] h-[28px] cursor-pointer" />
+          <button onClick={()=>toggleBtn()}>
+            {!isDark?<PiMoonThin className="w-[28px] h-[28px] cursor-pointer" />:<CiSun className="w-[28px] h-[28px] cursor-pointer"/>}
           </button>
           <div className="hidden md:flex cursor-pointer items-center border rounded-[100px] w-[163px] shadow-sm h-[44px] text-[18px] justify-center">
             <a href="#Connect">Connect</a>
@@ -101,11 +105,10 @@ const Navbar = () => {
                   setActive(item);
                   closeMenu();
                 }}
-                className={`${
-                  active === item
+                className={`${active === item
                     ? "text-red-600 font-semibold underline underline-offset-4"
                     : "text-[#2F2F2F]"
-                }`}
+                  }`}
               >
                 {item === "About" ? "About me" : item === "Work" ? "My Work" : item}
               </a>
