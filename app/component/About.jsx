@@ -24,7 +24,7 @@ const About = () => {
           className="rounded-[15px]"
         />
         <div className="md:ml-10 flex flex-col justify-between gap-5">
-          <p className="md:w-[600px] mt-3 md:mt-0 md:text-[20px] text-[14px] md:leading-[30px] text-center md:text-left text-[#565656]">
+          <p className="md:w-[600px] mt-3 md:mt-0 md:text-[20px] text-[16px] md:leading-[30px] text-center md:text-left text-[#565656]">
             As a frontend developer from India, I specialize in building clean,
             responsive, and engaging user interfaces using React, Next.js, and
             modern UI frameworks. I have hands-on experience creating real-world

@@ -5,15 +5,15 @@ import { IoMail } from "react-icons/io5";
 
 const Footer = () => {
     return (
-        <div className='flex items-center justify-center flex-col mt-20'>
-            <Image src={assets.logo3} width={171} height={57} alt='logo' />
-            <div className='flex items-center justify-center gap-1 text-[#797979]'>
+        <div className='flex px-10   items-center justify-center flex-col  lg:mt-20'>
+            <Image src={assets.logo3} width={171} height={57} alt='logo' className='px-10 md:px-0' />
+            <div className='flex items-center justify-center gap-1 text-[12px] text-[#797979]'>
                 <IoMail />
                 <p>divyanshutiwari173@gmail.com</p>
             </div>
-            <div className='border-t border-gray-400 w-[80%] flex justify-between mt-10'> 
-                    <p>© 2025 Divyanshu Tiwari. All rights reserved.</p>
-                    <div className='flex justify-between gap-3'>
+            <div className='border-t border-gray-400 w-[80%] flex flex-col justify-between mt-4 lg:mt-10'> 
+                    <p className='text-center text-[12px]'>© 2025 Divyanshu Tiwari. All rights reserved.</p>
+                    <div className='hidden justify-between gap-3'>
                         <p>Terms of Services</p>
                         <p>Privacy Policy</p>
                         <p>Connect with me</p>

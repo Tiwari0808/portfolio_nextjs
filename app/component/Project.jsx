@@ -11,12 +11,12 @@ const Project = () => {
     return (
         <div id='Work' className='flex justify-evenly items-center flex-col gap-10 mt-20 scroll-mt-24'>
             <div className='flex justify-center items-center flex-col '>
-                <p className='text-[24px] text-[#242424]'>my portfolio</p>
-                <p className='text-[60px] text-[#242424]'>My latest work</p>
-                <p className='text-[20px] text-[#565656] text-center w-[750px]'>Welcome to my web development portfolio! Explore a collection of projects showcasing
+                <p className='text-[20px] lg:text-[24px] text-[#242424]'>my portfolio</p>
+                <p className='text-[36px] lg:text-[60px] text-[#242424]'>My latest work</p>
+                <p className='lg:text-[20px] text-[16px] text-[#565656] text-center px-5 lg:w-[750px]'>Welcome to my web development portfolio! Explore a collection of projects showcasing
                     my expertise in front-end development.</p>
             </div>
-            <div className='flex justify-between gap-15'>
+            <div className='flex flex-col items-center md:flex-row justify-between gap-15'>
                 <div className="group w-[235px] h-[325px] relative overflow-hidden rounded-[10px]">
                     <Image
                         alt="project"
