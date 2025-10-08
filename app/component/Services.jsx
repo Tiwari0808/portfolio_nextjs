@@ -3,13 +3,13 @@ import Image from "next/image";
 import React from "react";
 import { FaLaptopCode, FaPalette, FaRocket } from "react-icons/fa6";
 
-const Services = () => {
+const Services = ({isDark}) => {
     return (
-        <div className="scroll-mt-24" id="Services">
+        <div className={`${isDark?'text-white':''} scroll-mt-24`} id="Services">
             <div className="flex items-center justify-center flex-col">
-                <p className="md:text-[24px] text-[20px] text-[#242424] font-normal">what i offers</p>
-                <p className="md:text-[60px] text-[36px]  text-[#242424] font-normal">My services</p>
-                <p className="text-[#565656] text-[16px] lg:text-[17px] md:leading-[40px] px-4 lg:w-[760px] text-center font-normal">
+                <p className="md:text-[24px] text-[20px] font-normal">what i offers</p>
+                <p className="md:text-[60px] text-[36px]  font-normal">My services</p>
+                <p className={`${isDark?'text-white':'text-[#565656]'} text-[16px] lg:text-[17px] md:leading-[40px] px-4 lg:w-[760px] text-center font-normal`}>
                     I’m a Frontend Developer specializing in React, Next.js, and modern web technologies.
                     I build fast, responsive, and interactive web apps with clean, user-friendly designs.
                 </p>

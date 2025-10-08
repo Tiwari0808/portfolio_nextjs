@@ -47,7 +47,7 @@ const Navbar = ({ isDark,setIsDark }) => {
 
   return (
     <>
-      <nav className="flex justify-between px-4 md:px-15 pt-5 fixed w-full z-50 backdrop-blur-sm ">
+      <nav className={`flex justify-between px-4 md:px-15 pt-5 fixed w-full z-50 backdrop-blur-sm`}>
         <a href="#Home">
           <Image
             alt="logo"
@@ -58,7 +58,7 @@ const Navbar = ({ isDark,setIsDark }) => {
         </a>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center gap-6 px-4 py-3 rounded-full bg-white bg-opacity-50 shadow-sm text-[18px] font-medium">
+        <ul className={`hidden md:flex items-center gap-6 px-4 py-3 rounded-full ${isDark ? 'bg-transparent':'bg-white'} ${isDark ? 'border border-amber-50':''} bg-opacity-50 shadow-sm text-[18px] font-medium`}>
           {menuItems.map((item) => (
             <li key={item}>
               <a
@@ -66,7 +66,7 @@ const Navbar = ({ isDark,setIsDark }) => {
                 onClick={() => setActive(item)}
                 className={`${active === item
                     ? "text-red-600 font-semibold"
-                    : "text-[#2F2F2F]"
+                    : !isDark?"text-[#2F2F2F]":'text-white'
                   }`}
               >
                 {item === "About" ? "About me" : item === "Work" ? "My Work" : item}
@@ -93,7 +93,7 @@ const Navbar = ({ isDark,setIsDark }) => {
         {/* Mobile Menu */}
         <ul
           ref={sideMenuRef}
-          className="md:hidden bg-rose-100 w-54 h-screen flex flex-col items-center top-0 z-50 transition-transform duration-500 gap-6 py-20 right-0 absolute translate-x-full"
+          className={`${isDark ? 'bg-[#2a004a]':'bg-rose-100'} md:hidden w-54 h-screen flex flex-col items-center top-0 z-50 transition-transform duration-500 gap-6 py-20 right-0 absolute translate-x-full`}
         >
           <div onClick={closeMenu}>
             <RxCross2 className="w-7 h-7 top-5 cursor-pointer absolute right-7" />
@@ -108,8 +108,8 @@ const Navbar = ({ isDark,setIsDark }) => {
                   closeMenu();
                 }}
                 className={`${active === item
-                    ? "text-red-600 font-semibold underline underline-offset-4"
-                    : "text-[#2F2F2F]"
+                    ? "text-red-600 font-semibold  underline-offset-4"
+                    : isDark ? "text-white":"text-[#2F2F2F]"
                   }`}
               >
                 {item === "About" ? "About me" : item === "Work" ? "My Work" : item}
