@@ -21,7 +21,7 @@ const About = ({isDark}) => {
           height={538}
           width={400}
           src={assets.profile2}
-          className="rounded-[15px] w-[120px] md:w-[400px] mx-auto "
+          className="rounded-[15px] w-[180px] md:w-[400px] mx-auto "
         />
         <div className="md:ml-10 flex flex-col justify-between gap-5">
           <p className={`md:w-[600px] mt-3 md:mt-0 md:text-[20px] text-[16px] md:leading-[30px] text-center md:text-left ${isDark?'text-white':'text-[#565656]'}`}>

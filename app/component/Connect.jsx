@@ -42,10 +42,10 @@ const Connect = ({isDark}) => {
             </div>
             <form className='flex flex-col' onSubmit={onSubmit} >
                 <div className='flex flex-col md:flex-row items-center lg:gap-20 gap-3 justify-center mt-15'>
-                    <input type="text" required name='name' placeholder='Enter your name' className={`border-[1px] max-w-[348px] outline-0 max-h-[68px] border-[#A4A4A4] ${isDark?'bg-[#2a004a]':'bg-[#FFFFFF]'} p-1 text-center rounded-[4px]`}/>
-                    <input type="text" required name='email' placeholder='Enter your email' className={`border-[1px] max-w-[348px] outline-0 max-h-[68px] border-[#A4A4A4] ${isDark?'bg-[#2a004a]':'bg-[#FFFFFF]'} p-1 text-center rounded-[4px]`}/>
+                    <input type="text" required name='name' placeholder='Enter your name' className={`border-[1px] w-[85%] px-5 lg:w-[303px] outline-0 lg:h-auto border-[#A4A4A4] ${isDark?'bg-[#2a004a]':'bg-[#FFFFFF]'} p-1 text-center rounded-[4px]`}/>
+                    <input type="text" required name='email' placeholder='Enter your email' className={`border-[1px] w-[85%] px-5 lg:w-[348px] outline-0 lg:h-auto border-[#A4A4A4] ${isDark?'bg-[#2a004a]':'bg-[#FFFFFF]'} p-1 text-center rounded-[4px]`}/>
                 </div>
-                <textarea name="message" id="" required placeholder='Enter your message' rows='6' className={`outline-0 p-4  rounded-[6px] flex items-center justify-center ${isDark?'bg-[#2a004a]':''} border-[#A4A4A4] lg:mt-10 mt-3 mx-auto md:w-[727px] lg:max-h-[215px] border-[1px]`}></textarea>
+                <textarea name="message" id="" required placeholder='Enter your message' rows='6' className={`outline-0 p-4 w-[85%] lg-w-[700px]  rounded-[6px] flex items-center justify-center ${isDark?'bg-[#2a004a]':''} border-[#A4A4A4] lg:mt-10 mt-3 mx-auto md:w-[727px] lg:max-h-[215px] border-[1px]`}></textarea>
                 <button type='submit' disabled={isSending} className='border-[1px] border-[#A4A4A4] px-3 py-2 flex items-center justify-center  cursor-pointer mx-auto mt-10 rounded-full bg-[#202020] text-[#FFFFFF]'>{isSending ? <FaSpinner /> : 'Submit now'}<span className={!isSending ? `text-center ml-2` : `hidden`}><FaLongArrowAltRight /></span></button>
             </form>
             <p className='mt-10 text-center underline text-red-500'>{result}</p>
