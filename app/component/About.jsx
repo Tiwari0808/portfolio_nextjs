@@ -21,7 +21,7 @@ const About = ({isDark}) => {
           height={538}
           width={400}
           src={assets.profile2}
-          className="rounded-[15px]"
+          className="rounded-[15px] w-[120px] md:w-[400px] mx-auto "
         />
         <div className="md:ml-10 flex flex-col justify-between gap-5">
           <p className={`md:w-[600px] mt-3 md:mt-0 md:text-[20px] text-[16px] md:leading-[30px] text-center md:text-left ${isDark?'text-white':'text-[#565656]'}`}>
@@ -32,21 +32,21 @@ const About = ({isDark}) => {
             performance and a polished user experience.
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center gap-5">
-            <div className={`border-[1px] border-[#D8D8D8] w-[199px] h-[195px] px-5 py-0 rounded-[15px] flex flex-col justify-evenly ${!isDark?'hover:bg-rose-100':'hover:bg-[#2a004a]'}  hover:-translate-y-1 duration-500`}>
+            <div className={`border-[1px] border-[#D8D8D8] md:w-[199px] h-[195px] px-5 py-0 rounded-[15px] flex flex-col justify-evenly ${!isDark?'hover:bg-rose-100':'hover:bg-[#2a004a]'}  hover:-translate-y-1 duration-500`}>
               <FaCode className={`${isDark?'text-white':'text-[#49516B]'} w-[22px] h-[22px]` }/>
               <p className={`${isDark?'text-white':'text-[#494949]'} text[20px] font-medium`}>Languages</p>
               <p className={`${isDark?'text-white':'text-[#797979]'} leading-5 text-[15px]`}>
                 HTML, CSS, JavaScript , React Js, Next Js
               </p>
             </div>
-            <div className={`border-[1px] border-[#D8D8D8] w-[199px] h-[195px] px-5 py-0 rounded-[15px] flex flex-col justify-evenly ${!isDark?'hover:bg-rose-100':'hover:bg-[#2a004a]'}  hover:-translate-y-1 duration-500`}>
+            <div className={`border-[1px] border-[#D8D8D8] md:w-[199px] h-[195px] px-5 py-0 rounded-[15px] flex flex-col justify-evenly ${!isDark?'hover:bg-rose-100':'hover:bg-[#2a004a]'}  hover:-translate-y-1 duration-500`}>
               <FaGraduationCap  className={`${isDark?'text-white':'text-[#49516B]'} w-[22px] h-[22px]` } />
               <p className={`${isDark?'text-white':'text-[#494949]'} text[20px] font-medium`}>Education</p>
               <p className={`${isDark?'text-white':'text-[#797979]'} leading-5 text-[15px]`}>
                 BE in Electronics and Telecommunication
               </p>
             </div>
-            <div className={`border-[1px] border-[#D8D8D8] w-[199px] h-[195px] px-5 py-0 rounded-[15px] flex flex-col justify-evenly ${!isDark?'hover:bg-rose-100':'hover:bg-[#2a004a]'}  hover:-translate-y-1 duration-500`}>
+            <div className={`border-[1px] border-[#D8D8D8] md:w-[199px] h-[195px] px-5 py-0 rounded-[15px] flex flex-col justify-evenly ${!isDark?'hover:bg-rose-100':'hover:bg-[#2a004a]'}  hover:-translate-y-1 duration-500`}>
               <FaTools className={`${isDark?'text-white':'text-[#49516B]'} w-[22px] h-[22px]` } />
               <p className={`${isDark?'text-white':'text-[#494949]'} text[20px] font-medium`}>
                 Frameworks & Libraries

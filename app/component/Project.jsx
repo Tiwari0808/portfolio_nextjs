@@ -4,16 +4,16 @@ import Image from 'next/image'
 import React from 'react'
 import { FaArrowRight, FaPaperPlane } from 'react-icons/fa6'
 
-const Project = () => {
+const Project = ({isDark}) => {
     const handleShowMore = () => {
         window.open('https://github.com/Tiwari0808', '_blank')
     }
     return (
-        <div id='Work' className='flex justify-evenly items-center flex-col gap-10 mt-20 scroll-mt-24'>
+        <div id='Work' className={`flex ${isDark?'text-white':'text-[#242424]'} justify-evenly items-center flex-col gap-10 mt-20 scroll-mt-24`}>
             <div className='flex justify-center items-center flex-col '>
-                <p className='text-[20px] lg:text-[24px] text-[#242424]'>my portfolio</p>
-                <p className='text-[36px] lg:text-[60px] text-[#242424]'>My latest work</p>
-                <p className='lg:text-[20px] text-[16px] text-[#565656] text-center px-5 lg:w-[750px]'>Welcome to my web development portfolio! Explore a collection of projects showcasing
+                <p className='text-[20px] lg:text-[24px]'>my portfolio</p>
+                <p className='text-[36px] lg:text-[60px]'>My latest work</p>
+                <p className={`lg:text-[20px] text-[16px] ${isDark?'text-white':'text-[#565656]'} text-center px-5 lg:w-[750px]`}>Welcome to my web development portfolio! Explore a collection of projects showcasing
                     my expertise in front-end development.</p>
             </div>
             <div className='flex flex-col md:flex-row items-center  justify-between gap-15'>
@@ -33,7 +33,7 @@ const Project = () => {
                             <p className="text-[#2A2A2A] font-semibold">GroomGo</p>
                             <p className="text-[#5E5E5E] text-[12px]">Barber Booking App</p>
                         </div>
-                        <div className="group-hover:bg-[#D8FC68] shadow cursor-pointer hover:shadow-xl p-3 rounded-full">
+                        <div className={`${isDark?'bg-red-500 text-white':''} group-hover:bg-red-500 shadow cursor-pointer hover:shadow-xl p-3 rounded-full`}>
                             <FaPaperPlane className='group-hover:rotate-360 transition-transform duration-500' />
                         </div>
                     </div>
@@ -54,7 +54,7 @@ const Project = () => {
                             <p className="text-[#2A2A2A] font-semibold">GroomGo</p>
                             <p className="text-[#5E5E5E] text-[12px]">Barber Booking App</p>
                         </div>
-                        <div className="group-hover:bg-[#D8FC68] shadow cursor-pointer hover:shadow-xl p-3 rounded-full">
+                        <div className={`${isDark?'bg-red-500 text-white':''} group-hover:bg-red-500 shadow cursor-pointer hover:shadow-xl p-3 rounded-full`}>
                             <FaPaperPlane className='group-hover:rotate-360 transition-transform duration-500' />
                         </div>
                     </div>
@@ -75,7 +75,7 @@ const Project = () => {
                             <p className="text-[#2A2A2A] font-semibold">GroomGo</p>
                             <p className="text-[#5E5E5E] text-[12px]">Barber Booking App</p>
                         </div>
-                        <div className="group-hover:bg-[#D8FC68] shadow cursor-pointer hover:shadow-xl p-3 rounded-full">
+                        <div className={`${isDark?'bg-red-500 text-white':''} group-hover:bg-red-500 shadow cursor-pointer hover:shadow-xl p-3 rounded-full`}>
                             <FaPaperPlane className='group-hover:rotate-360 transition-transform duration-500' />
                         </div>
                     </div>
@@ -84,8 +84,8 @@ const Project = () => {
             </div>
 
             <div onClick={() => handleShowMore()} className='border cursor-pointer border-[#A7A7A7] p-3 rounded-full text-center flex items-center gap-1 justify-center group'>
-                <button className='text-black cursor-pointer' >show more</button>
-                <FaArrowRight className='text-[#6F6F6F] cursor-pointer group-hover:translate-x-1 duration-500' />
+                <button className={`${isDark?'text-white':'text-black'} cursor-pointer`} >show more</button>
+                <FaArrowRight className={`${isDark?'text-red-500':'text-[#6F6F6F]'} cursor-pointer group-hover:translate-x-1 duration-500` }/>
             </div>
 
         </div>
