@@ -37,7 +37,7 @@ const Project = ({ isDark }) => {
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9, duration: 0.6, }}
-                className='flex flex-col md:flex-row items-center  justify-between gap-15'>
+                className='flex flex-col md:flex-row items-center hidden  justify-between gap-15'>
                 <motion.div
                     whileHover={{ scale: 1.05 }}
                     duration={{ duration: 0.3 }}
