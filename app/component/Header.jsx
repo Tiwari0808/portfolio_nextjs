@@ -1,9 +1,11 @@
+'use client'
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { IoArrowForward } from "react-icons/io5";
 import { FaDownload } from "react-icons/fa6";
-import { motion, spring } from "motion/react"
+import { motion } from "framer-motion";
+
 
 
 const Header = ({ isDark }) => {
@@ -13,7 +15,7 @@ const Header = ({ isDark }) => {
         <motion.div
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
-          transition={{ duration: 0.8, type: spring, stiffness: 100 }}
+          transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
           className='flex flex-col items-center justify-center gap-2'>
           <Image src={assets.profile_circle} priority width={168} height={168} alt='profile-picture rounded-full' />
         </motion.div>
